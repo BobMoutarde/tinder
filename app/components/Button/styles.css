@@ -110,6 +110,11 @@
 }
 
 
+.accountSettings:hover {
+  background-color: transparent;
+  color: #e95f5c;
+  transition: 0.25s;
+}
 
 .accountSettings {
   flex: 1;
@@ -117,4 +122,9 @@
   border: 1px solid #eee;
   padding: 10px 20px;
   margin: 10px;
+
+  background-color: #e95f5c;
+  border: 1px solid #e95f5c;
+  /*background-color: #1f1f1f;
+  border-color: rgba(125, 125, 125, 0.38);*/
 }

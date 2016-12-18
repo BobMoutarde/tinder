@@ -110,11 +110,11 @@
 }
 
 .bioInput {
-	width: 100%;
-	height: 80px;
+	/*width: 100%;*/
+	height: 100%;
 	resize: none;
-	padding: 10px;
 	font-size: 12px;
+  overflow: hidden;
 }
 
 .bioInputLabel {
@@ -130,20 +130,26 @@
 	width: 100%;
 	white-space: nowrap;
 	margin: 0px 10px;
-	overflow: hidden;
-	height: 60px;
+	/*overflow: hidden;*/
+	/*height: 60px;*/
 }
 
 .interestsContainerWrapper {
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;
 	overflow-x: auto;
 	width: 100%;
 	padding: 5px;
-	height: 100%;
+	height: 100%;*/
+  /*flex-wrap: nowrap;*/
+  width: 100%;
+	overflow-y: auto;
+  padding: 5px;
+  height: 100%;
 }
 
 .commonInterestsLink {
-  padding: 10px 5px;
+  float: left;
+  padding: 5px 0px;
   text-decoration: none;
 }
 

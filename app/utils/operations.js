@@ -7,6 +7,10 @@ export function getAge(dateString) {
   return getCurrentYear() - new Date(dateString).getFullYear() - 1;
 }
 
+export function getNbOfCommonInterest(commonInterest) {
+  return commonInterest && commonInterest.length || 0;
+}
+
 export function parsePingTime(dateString, text=true) {
   if (!dateString) return 'Active some time ago';
   const currentDate = new Date().getTime();
@@ -49,6 +53,10 @@ export function matchesSortByYoungest(a, b) {
 
 export function matchesSortByOldest(a, b) {
   return getAge(b.birth_date) - getAge(a.birth_date);
+}
+
+export function matchesSortByInterest(a, b) {
+  return getNbOfCommonInterest(b) - getNbOfCommonInterest(a);
 }
 
 export function messagesSortByRecent(a, b) {

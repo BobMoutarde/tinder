@@ -65,12 +65,12 @@ class DetailView extends React.Component {
             ref={i => { this.imageGallery = i; }}
             defaultImage={this.props.data.photos[0].url}
             items={this.props.imageData}
-            showThumbnails={false}
-            showNav={false}
+            showThumbnails={true}
+            showNav={true}
             startIndex={0}
             onClick={(e) => this.handleClickNext(e)}
             lazyLoad
-            renderItem={(item) => <div key={item.original} style={{ backgroundImage: `url(${item.original})`, height: 400, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />}
+            renderItem={(item) => <div key={item.original} style={{ backgroundImage: `url(${item.original})`, height: 520, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />}
           /> : null}
         </div>
         <div className={styles.detailViewContainer_content}>

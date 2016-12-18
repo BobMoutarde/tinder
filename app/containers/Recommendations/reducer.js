@@ -27,6 +27,7 @@ import {
   matchesSortByLastActive,
   matchesSortByYoungest,
   matchesSortByOldest,
+  matchesSortByInterest,
 } from 'utils/operations';
 
 const sortMapping = {
@@ -34,6 +35,7 @@ const sortMapping = {
   lastActive: matchesSortByLastActive,
   youngest: matchesSortByYoungest,
   oldest: matchesSortByOldest,
+  interests: matchesSortByInterest,
 };
 
 const initialState = fromJS({

@@ -16,8 +16,8 @@
   border-left:1px solid #eee;
   display: flex;
   flex-direction: column;
-  flex: 2.75;
-  max-width: 400px !important;
+  flex: 3;
+  /*max-width: 400px !important;*/
   min-width: 400px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .dashboardMatchesNavigation {
-  background-color: white;
+  /*background-color: white;*/
   border-bottom: 1px solid #eee;
   flex:1;
   display: flex;

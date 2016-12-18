@@ -32,7 +32,6 @@ const MatchCard = ({ data, type, onClick, onClickButton }) => {
         {schoolText}
       </div>
     </div> : null;
-
   return (
     <div
       className={type === 'active' ? `${styles.matchCardLike} ${styles.matchCard}` : styles.matchCard}
@@ -55,6 +54,10 @@ const MatchCard = ({ data, type, onClick, onClickButton }) => {
           <Text type="name">
             {data.name}
           </Text>
+          {data.common_interests && data.common_interests.length > 0 ?
+            <div className={styles.matchCardInterests_count}>
+              {data.common_interests.length}
+            </div> : null}
           {detailDiv}
         </div>
       </div>
@@ -72,4 +75,3 @@ MatchCard.propTypes = {
 
 
 export default MatchCard;
-

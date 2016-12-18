@@ -65,6 +65,7 @@ class DashboardRecommendations extends React.Component { // eslint-disable-line
               <option value="distance">Nearby</option>
               <option value="youngest">Youngest</option>
               <option value="oldest">Oldest</option>
+              <option value="interests">Comment Interests</option>
             </select>
             <div className={styles.dashboardMatchesContainerButtons}>
               <Button type="fetchMatches" onClick={() => this.props.onMultiple(this.props.recommendations, 'like')}>Like All</Button>
